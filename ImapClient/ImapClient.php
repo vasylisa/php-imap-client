@@ -926,7 +926,7 @@ class ImapClient
     protected function getTrash()
     {
         foreach ($this->getFolders(null, 1) as $folder) {
-            if (in_array(strtolower($folder), array('trash', 'inbox.trash', 'papierkorb'))) {
+            if (in_array(strtolower($folder), array('trash', 'inbox.trash', 'papierkorb', '&bboepgrabdceoaq9bda-'))) {
                 return $folder;
             }
         }
@@ -944,7 +944,7 @@ class ImapClient
     protected function getSent()
     {
         foreach ($this->getFolders(null, 1) as $folder) {
-            if (in_array(strtolower($folder), array('sent', 'gesendet', 'inbox.gesendet'))) {
+            if (in_array(strtolower($folder), array('sent', 'gesendet', 'inbox.gesendet', '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-'))) {
                 return $folder;
             }
         }
